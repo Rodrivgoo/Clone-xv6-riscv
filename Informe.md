@@ -37,6 +37,15 @@ Se modificaron varios archivos:
         [SYS_getancestor]     sys_getancestor,
         }
 
+### Funciones
+    soytupadre 0 --> Retorna el mismo PID
+    soytupadre 1 --> Retorna el padre PID
+    soytupadre 2 --> Retorna el abuelo PID
+            .
+            .
+            .
+    soytupadre N --> Retorna -1 si no existe ese proceso
+      
 ### Problemas
 1. Tuve problemas al definir las llamadas que incluian argumentos, en el caso de getancestor antender como se pasan los parametros, puede ser que me haya olvidado algo de C...
 2. Estuve como 30 minutos buscando un error hasta que me dí cuenta que eran unas minusculas en la palabra SYS_getancestor
